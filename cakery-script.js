@@ -1,12 +1,5 @@
-// function showDiv(id) {
-//     document.querySelectorAll('.toggle-div').forEach(div => div.style.display = 'none');
-//     document.getElementById(id).style.display = 'block';
-//   }
-
-//   function toggleProducts() {
-//     const products = document.getElementById('products');
-//     products.style.display = products.style.display === 'block' ? 'none' : 'block';
-//   }
+// Function to toggle the visibility of the top-level sections
+// (home, about, products, contact) and their respective sub-sections
 
 function showDiv(id) {
   // Hides all top-level toggle divs (home, about, products, contact)
@@ -22,13 +15,26 @@ function showDiv(id) {
   }
 }
 
+// Function to toggle the visibility of product sub-sections (cakes, cupcakes, etc.)
+// and their respective product items
 function showProductPage(id) {
-  // Hides all product-specific tabs
-  document.querySelectorAll('.products-toggle-div').forEach(div => div.style.display = 'none');
+  // Hide all product sections
+  document.querySelectorAll('.products-toggle-div').forEach(div => {
+    div.style.display = 'none';
+  });
 
-  // Show selected product tab
+  // Show the selected section
   const selected = document.getElementById(id);
   if (selected) selected.style.display = 'block';
+
+  // Remove "active" class from all buttons
+  document.querySelectorAll('.products-nav .btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  // Add "active" class to the clicked button
+  const clickedButton = document.querySelector(`.products-nav button[onclick*="${id}"]`);
+  if (clickedButton) clickedButton.classList.add('active');
 }
 
 const hamburger = document.querySelector('.hamburger');

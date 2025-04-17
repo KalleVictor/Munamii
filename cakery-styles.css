@@ -195,6 +195,19 @@ ul {
 p2 {
     margin-top: -20px;
 }
+p2 a{
+    text-decoration: none;
+    color: #333; /* Base text color for mobile */
+    padding: 0px 0px;
+    display: block;
+    border-radius: 0px;
+}
+p2 a:hover {
+    color: mediumblue; /* Change text color on hover */
+    text-shadow: lightblue 0px 0px 5px; /* Optional: add a shadow effect on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+    transition: text-shadow 0.3s, color 0.3s; /* Smooth transition for the hover effect */
+}
 
 
 .products-toggle-div li {

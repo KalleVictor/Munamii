@@ -33,13 +33,13 @@ function showProductPage(id) {
 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-menu a');
+const navLinks = document.querySelectorAll('.nav-menu button');
 
 hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-navLinks.forEach(link => {
+navLinks.forEach(button => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('active');
   });

@@ -1,0 +1,309 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  justify-content: center;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 16px; /* Base font size for mobile */
+    line-height: 1.5; /* Base line height for mobile */
+    color: #333; /* Base text color for mobile */
+    color-scheme: dark;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    min-width: 360px; /* Minimum width for mobile */
+    transition: 0.3s;
+  }
+
+  html {
+    padding: 5px;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    text-align: center;
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+    .products-toggle-div li {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
+    }
+  }
+  @media (max-width: 480px) {
+    .products-toggle-div li {
+      flex: 1 1 100%; /* 1 per row on small screens */
+    }
+  }
+
+header {
+    background: repeating-linear-gradient(
+      45deg,                 /* angle of the stripes */
+      lightblue,             /* base color */
+      lightblue 10px,        /* stripe thickness */
+      white 10px,            /* start of next stripe */
+      white 20px             /* white stripe thickness */
+    );
+    color: white;
+    padding: 20px;
+    max-width: 900px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: solid 1px lightblue;
+    box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em; /* Responsive font size for mobile */
+    margin: 0;
+    text-align: center;
+    color: #333; /* Base text color for mobile */
+}
+h2 {
+    font-size: 2em; /* Responsive font size for mobile */
+    margin: 0;
+    text-align: center;
+    color: #333; /* Base text color for mobile */
+}
+p {
+    text-align: left;
+    padding: 0 20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+a:active{
+    color: lightblue; /* Change text color on active */
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into new rows */
+    list-style-type: none;
+    justify-content: center; /* Optional: centers content nicely */
+    padding: 0;
+    margin: 0;
+    gap: 1px; /* Optional: adds spacing between items */
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+.content {
+    padding: 20px;
+    max-width: 900px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+.logo-pic{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 2px lightblue;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background: repeating-linear-gradient(
+        45deg,                 /* angle of the stripes */
+        lightblue,             /* base color */
+        lightblue 10px,        /* stripe thickness */
+        white 10px,            /* start of next stripe */
+        white 20px             /* white stripe thickness */
+      );
+      padding: 20px;
+      max-width: 900px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border-top: solid 1px lightblue;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn {
+    background-color: white; /* Button background color */
+    border: 2px solid lightblue; /* Button border color */
+    color: #333;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    font-size: 1.2em; /* Responsive font size for mobile */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+.btn:hover {
+    color: lightblue; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+.btn:active {
+    background-color: lightblue; /* Change background color on active */
+    transform: scale(0.95); /* Slightly shrink the button on active */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-text {
+    font-size: 1.2em; /* Responsive font size for mobile */
+    color: #333; /* Base text color for mobile */
+    padding: 0;
+}
+
+.icon-btn2 {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-btn2:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+.icon-btn2 img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+p2 {
+    margin-top: -20px;
+}
+
+
+.products-toggle-div li {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.products-toggle-div li:hover {
+  transform: scale(1.05); /* Slightly enlarge the product card on hover */
+  transition: transform 0.3s; /* Smooth transition for the hover effect */
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.products-img {
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 30%;
+    border: solid 2px lightblue;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hide menu by default on mobile */
+/* Hide hamburger by default (desktop) */
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: none; /* default hidden */
+  margin: 10px;
+  position: relative;
+  z-index: 1001;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* only show on mobile */
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    background-color: lightblue;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: left;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-menu li {
+    margin: 0;
+  }
+}
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

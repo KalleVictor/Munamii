@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munamii Cakery</title>
+    <link rel="stylesheet" href="cakery-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <img src="images/munamii-logo.png" alt="Munamii Logo" class="logo-pic">
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+              <li><a href="#" onclick="showDiv('home')"><button class="btn">Home</button></a></li>
+              <li><a href="#" onclick="showDiv('about')"><button class="btn">About</button></a></li>
+              <li><a href="#" onclick="showDiv('products')"><button class="btn">Products</button></a></li>
+              <li><a href="#" onclick="showDiv('contact')"><button class="btn">Contact</button></a></li>
+            </ul>
+          </nav>
+    </header>
+    <div class="content">
+        <div id="home" class="toggle-div"> 
+            <h1>Munamii Cakery</h1>
+            <p>Hi! Welcome to Munamii Cakery! We offer you the most delicious cakes and cupcakes for all kinds of events and celebrations. Browse around to discover what you would like to buy.</p>
+        </div>
+        <div id="about" class="toggle-div" style="display: none;">
+            <h1>About us</h1>
+            <p>At Munamii Cakery, each cake, each box of cupcakes that we make has a very special value for us. We not only want to bring a dessert to your table but rather a unique experience for you, which will become an unforgettable memory. We have been in the pastry market for more than 8 years and now we offer you a new way to shop through our website.</p>
+        </div>
+        <div id="products" class="toggle-div" style="display: none;">
+            <nav class="products-nav">
+                <ul>
+                    <li><button class="btn" onclick="showProductPage('cakes')">Cakes</button></li>
+                    <li><button class="btn" onclick="showProductPage('cupcakes')">Cupcakes</button></li>
+                </ul>
+            </nav>
+            <div id="cakes" class="products-toggle-div">
+                <ul>
+                <li><img src="assets/weddingcake1.png" alt="Cakes" class="products-img">  <div class="product-footer">
+                    <button class="cart-btn">
+                      <img src="images/trolley.png" alt="Add to cart">
+                    </button>
+                    <span class="price">45€</span>
+                  </div>
+                </li>
+                <li><img src="assets/weddingcake2.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                    <button class="cart-btn">
+                      <img src="images/trolley.png" alt="Add to cart">
+                    </button>
+                    <span class="price">45€</span>
+                    </div>
+                </li>
+                <li><img src="assets/weddingcake3.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">45€</span>
+                      </div>
+                </li>
+                <li><img src="assets/weddingcake4.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">45€</span>
+                      </div>
+                </li>
+                <li><img src="assets/weddingcake5.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">45€</span>
+                      </div>
+                </li>
+                <li><img src="assets/weddingcake6.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">45€</span>
+                      </div>
+                </li>
+                <li><img src="assets/weddingcake7.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">45€</span>
+                      </div>
+                </li>
+                <li><img src="assets/weddingcake8.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">45€</span>
+                      </div>
+                </li>
+                </ul>
+            </div>
+            <div id="cupcakes" class="products-toggle-div" style="display: none;">
+                <ul>
+                <li><img src="assets/cupcake1.png" alt="Cakes" class="products-img">  
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">15€ 6pcs per box</span>
+                      </div>
+                </li>
+                <li><img src="assets/cupcake2.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">15€ 6pcs per box</span>
+                    </div>
+                </li>
+                <li><img src="assets/cupcake3.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">15€ 6pcs per box</span>
+                      </div>
+                </li>
+                <li><img src="assets/cupcake4.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">15€ 6pcs per box</span>
+                      </div>
+                </li>
+                <li><img src="assets/cupcake5.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">15€ 6pcs per box</span>
+                      </div>
+                </li>
+                <li><img src="assets/cupcake6.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">15€ 6pcs per box</span>
+                      </div>
+                </li>
+                <li><img src="assets/cupcake7.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">15€ 6pcs per box</span>
+                      </div>
+                </li>
+                <li><img src="assets/cupcake8.png" alt="Cakes" class="products-img">
+                    <div class="product-footer">
+                        <button class="cart-btn">
+                          <img src="images/trolley.png" alt="Add to cart">
+                        </button>
+                        <span class="price">15€ 6pcs per box</span>
+                      </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact" class="toggle-div" style="display: none;">
+            <p><strong>Home delivery service:</strong> All the city of Stockholm (redacted) and Malmo (redacted) with additional cost.</p>
+            <p><strong>Place to pick up order:</strong> Via la Costa Avenue. Blue Port gated neighbourhood. We will send you the GPS Location via WhatsApp.</p>
+            <p><em>Orders must be placed 2 days before for greater security, processing and availability.</em></p>
+            <p>Tuesday to Saturday</p>
+            <p>9 a.m. at 2 p.m.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="social-media">
+        <a href="www.facebook.com/munamiicakery"
+            title="Munamii Cakery - Facebook Page" 
+            class="icon-btn2" 
+            target="_blank" 
+            data-tooltip="Munamii Cakery - Facebook">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="www.instagram.com/munamiicakery"
+            title="Munamii Cakery - Instagram Page" 
+            class="icon-btn2" 
+            target="_blank" 
+            data-tooltip="Munamii Cakery - Instagram">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        </div>
+        <p2>Munamii Cakery &copy; 2025 All rights reserved.</p2>
+    </footer>
+    <script src="cakery-script.js"></script>
+</body>

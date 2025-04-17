@@ -32,14 +32,15 @@ function showProductPage(id) {
 }
 
 const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-menu button');
+const navMenu = document.getElementById('navMenu'); // Only the mobile menu
+const navLinks = navMenu.querySelectorAll('a'); // Target <a> tags inside mobile menu
 
 hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-navLinks.forEach(button => {
+// Close menu on link click (mobile only)
+navLinks.forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('active');
   });

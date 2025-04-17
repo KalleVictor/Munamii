@@ -11,14 +11,24 @@
     <header>
         <button class="hamburger" onclick="toggleMenu()">☰</button>
         <img src="images/munamii-logo.png" alt="Munamii Logo" class="logo-pic">
-        <nav class="nav-menu" id="navMenu">
-            <ul>
-              <button class="btn" onclick="showDiv('home')">Home</button>
-              <button class="btn" onclick="showDiv('about')">About</button>
-              <button class="btn" onclick="showDiv('products')">Products</button>
-              <button class="btn" onclick="showDiv('contact')">Contact</button>
-            </ul>
-          </nav>
+        <nav class="nav-menu desktop-menu">
+          <ul>
+            <li><button class="btn" onclick="showDiv('home')">Home</button></li>
+            <li><button class="btn" onclick="showDiv('about')">About</button></li>
+            <li><button class="btn" onclick="showDiv('products')">Products</button></li>
+            <li><button class="btn" onclick="showDiv('contact')">Contact</button></li>
+          </ul>
+        </nav>
+      
+        <!-- Mobile Menu (with links) -->
+        <nav class="nav-menu mobile-menu" id="navMenu">
+          <ul>
+            <li><a href="#" onclick="showDiv('home')">Home</a></li>
+            <li><a href="#" onclick="showDiv('about')">About</a></li>
+            <li><a href="#" onclick="showDiv('products')">Products</a></li>
+            <li><a href="#" onclick="showDiv('contact')">Contact</a></li>
+          </ul>
+        </nav>
     </header>
     <div class="content">
         <div id="home" class="toggle-div"> 

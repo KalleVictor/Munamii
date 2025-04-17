@@ -144,12 +144,12 @@ ul {
     background-color: white; /* Button background color */
     border: 2px solid lightblue; /* Button border color */
     color: #333;
-    padding: 1px 2px;
+    padding: 1px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
     font-size: 1.2em; /* Responsive font size for mobile */
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
